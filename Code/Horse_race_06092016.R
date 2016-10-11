@@ -59,6 +59,7 @@ dat <- ConvertToFactors(categorical_features, master.df, use.dynamics = FALSE)
 
 df_features = dat[numeric_features]
 df_features$win = FALSE
+df_features$win[df_features$position==1]=TRUE
 
 
 
